@@ -1,0 +1,193 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.nav-bar{
+    max-width: 100%;
+    background-color: rgb(1, 27, 57);
+    
+}
+
+.nav-bar nav{
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.nav-bar nav a{
+    text-decoration: none;
+    margin: 10px;
+    color: azure;
+
+}
+
+.nav-bar nav :hover{
+   padding: 10px;
+   background-color: white;
+   color: black;
+}
+.nav-bar nav a :active{
+    padding: 10px;
+    background-color: white;
+    color: black;
+ }
+
+.container{
+    max-width: 100%;
+    height: 100%;
+    padding: 25px;
+    margin: 0px;
+    overflow: hidden;
+    background-color:rgb(229, 229, 229);
+
+
+}
+
+
+
+.sidebar{
+    max-width: 20%;
+    height: 80vh;
+    padding: 25px;
+    float: left;
+    overflow: scroll;
+    background-color: rgb(195, 195, 192);
+}
+/* width */
+ .sidebar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .sidebar::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 5px rgb(181, 179, 179);
+    border-radius: 5px;
+  }
+  
+  
+  /* Handle */
+  .sidebar::-webkit-scrollbar-thumb {
+    background: rgb(235, 224, 224);
+    border-radius: 10px;
+  }
+  
+.sidebar a{
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+     
+}
+.sidebar h3{
+  margin: 10px;
+   font-style: oblique;
+  color: gray;
+}
+
+.sidebar :hover{
+    background-color: rgb(216, 211, 205);
+    padding: 5px;
+    margin: 10px;
+}
+.sidebar a :active{
+    background-color: rgb(216, 211, 205);
+    padding: 5px;
+    color: darkgreen;
+}
+
+.content-bar{
+    max-width: 70%;
+    height: 100%;
+    padding: 25px;
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 5px;
+    font-size: 18px;
+    background-color: aliceblue;
+    margin: 10px;
+    
+    
+}
+
+.footer{
+    position: relative;
+    top: 100%;
+    height: 600px;
+    background-color: rgb(1, 27, 57);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+.col-1{
+    float: left;
+    padding: 25px;
+    margin: 20px;
+   /* background-color: rgb(10, 35, 60) ; */
+    border-radius: 5px;
+    height: 350px;
+    width: 300px;
+    
+}
+
+.col-1 ol li{
+        color: white;
+        margin: 10px;
+        list-style: none;
+        justify-content: left;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.topic{
+    max-width: 60%;
+    position: relative;
+    left: 20%;
+}
+.foot{
+    width: 100%;
+    background-color: rgb(10, 35, 60);
+    padding: 10px;
+    text-align: center;
+}
+
+footer .foot{
+    position:absolute;
+    bottom: 0px;
+}
+
+.foot a{
+    color: blanchedalmond;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.input-search{
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid blue;
+    background-color: white;
+}
+.btn{
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid greenyellow;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+
+
+

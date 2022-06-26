@@ -1,39 +1,3 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-
-.nav-bar{
-    max-width: 100%;
-    background-color: rgb(1, 27, 57);
-    
-}
-
-.nav-bar nav{
-    padding: 10px;
-    text-align: center;
-    
-}
-
-.nav-bar nav a{
-    text-decoration: none;
-    margin: 10px;
-    color: azure;
-
-}
-
-.nav-bar nav :hover{
-   padding: 10px;
-   background-color: white;
-   color: black;
-}
-.nav-bar nav a :active{
-    padding: 10px;
-    background-color: white;
-    color: black;
- }
 
 .container{
     max-width: 100%;
@@ -56,6 +20,8 @@ body{
     overflow: scroll;
     background-color: rgb(195, 195, 192);
 }
+
+
 /* width */
  .sidebar::-webkit-scrollbar {
     width: 10px;

@@ -8,3 +8,12 @@
 .container .row a{
     display: inline;
 }
+
+
+
+.card{
+    box-shadow: 1px 1px 2px 2px rgb(207, 206, 207);
+    width: 30%;
+    margin: 2%;
+}
+

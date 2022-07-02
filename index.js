@@ -22,6 +22,11 @@ app.post('/home',function(req,res){
 app.get('/search',function(req,res){
     res.sendFile( __dirname+'/public/'+ searchTopic);
 })
+
+app.post('/login',function(req,res){
+     
+    res.redirect('/');
+})
    
 
 

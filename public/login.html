@@ -19,7 +19,7 @@
             height: 100vh;
         }
 
-        .center { 
+        .center {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -64,6 +64,8 @@
                 transform 200ms ease-in-out 0ms;
         }
 
+       
+
         .popup .close-btn {
             position: absolute;
             top: 10px;
@@ -97,8 +99,7 @@
 
         }
 
-        .popup .form .form-element input[type="text"] 
-        .popup .form .form-element input[type="password"] {
+        .popup .form .form-element input[type="text"] .popup .form .form-element input[type="password"] {
             margin-top: 5px;
             display: block;
             width: 100%;
@@ -114,7 +115,7 @@
         }
 
         .popup .form .form-element button {
-            width: 100%;
+            width: 50%;
             height: 40px;
             border: none;
             outline: none;
@@ -135,60 +136,119 @@
             text-decoration: none;
             font-weight: 600;
         }
+
+        .form-element{
+               position: relative;
+               left: 22%;
+               width: 50%;
+               text-align:justify;
+               font-family: 'Times New Roman', Times, serif;
+               
+              
+        }
+         .form-element [type="text"]{
+            position: relative;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 50px;
+            padding: 5px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: cornsilk;
+         }
+
+         .form-element [type="password"]{
+            position: relative;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 50px;
+            padding: 5px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: cornsilk;
+
+         }
+
+         .form-element [type="password"]:hover{
+            border: 1.5px solid blue;
+         }
+         .form-element [type="text"]:hover{
+            border: 1.5px solid blue;
+         }
+
+        
+
+         #btn:hover{
+            background-color: blue;
+            color: white;
+         }
+         #forgot{
+            text-align: center;
+         }
+         #forgot:hover{
+            color: #000;
+         }
+         .form-btn{
+            text-align: center;
+        }
+        #show-login:hover{
+            background-color: aqua;
+            color: antiquewhite;
+        }
     </style>
 
 </head>
 
 <body>
     <div class="center">
-        <button id="show-login">Login</button>        
-            
-
+        <button id="show-login">Login</button>
     </div>
 
     <div class="popup">
         <div class="close-btn">&times;</div>
         <div class="form">
             <h2>Log in</h2>
-          
+          <form action="/login" method="post">
+            
             <div class="form-element">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter mail">
+                <label for="email">Email:</label>
+                <input type="text" name="email"  id="email" placeholder="Enter mail " autocomplete="off">
             </div>
             <div class="form-element">
 
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your Password">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" autocomplete="off" placeholder="Enter your Password">
             </div>
             <div class="form-element">
-                <input type="checkbox" id="remember-me">
+                <input type="checkbox" name="checkbox" id="remember-me">
                 <label for="remember-me">Remember me</label>
             </div>
 
-            <div class="form-element">
-                <button>Sign in</button>
+            <div class="form-element form-btn">
+                <button type="submit" id="btn">Sign in</button>
             </div>
             <div class="form-element">
 
-                <a href="">Forgot password</a>
+                <a href="#" id="forgot">Forgot password</a>
             </div>
+          </form>
 
         </div>
     </div>
 
 </body>
 
-    <script>
-        document.querySelector("#show-login").addEventListener("click", function () {
-            document.querySelector(".popup").classList.add("active");
-        });
+<script>
+    document.querySelector("#show-login").addEventListener("click", function () {
+        document.querySelector(".popup").classList.add("active");
+    });
 
 
 
-        document.querySelector(".popup .close-btn").addEventListener("click", function () {
-            document.querySelector(".popup").classList.remove("active");
-        });
-    </script>
+    document.querySelector(".popup .close-btn").addEventListener("click", function () {
+        document.querySelector(".popup").classList.remove("active");
+    });
+</script>
 
 
 </html>

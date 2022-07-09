@@ -8,6 +8,7 @@ body{
     max-width: 100%;
     background-color: rgb(1, 27, 57);
     box-shadow: 1px 1px 10px black;
+   
     
 }
 .nav-bar nav{
@@ -18,18 +19,22 @@ body{
 }
 .nav-bar nav a{
     text-decoration: none;
-    margin: 10px;
+    margin: 25px;
     color: azure;
 
 }
 .nav-bar nav :hover{
-    padding: 10px;
+    padding: 12px;
     background-color: white;
     color: black;
  }
 
  .nav-bar nav a :active{
-    padding: 10px;
+    padding: 12px;
     background-color: white;
     color: black;
  }
+
+ 
+
+ 

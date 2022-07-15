@@ -14,14 +14,20 @@ var searchTopic;
 
 app.post('/home',function(req,res){
    
-       searchTopic = req.body.topic + '.html';
-       res.redirect(303,'/search');
+    searchTopic = req.body.topic;
+    if(searchTopic !=" "){
+        searchTopic  += '.html'
+        res.redirect(303,'/search')
+    }
      
     
 })
 app.get('/search',function(req,res){
     res.sendFile( __dirname+'/public/'+ searchTopic);
 })
+
+   
+
 
 app.post('/login',function(req,res){
      
